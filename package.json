@@ -26,5 +26,8 @@
   "bugs": {
     "url": "https://github.com/xzones2014/jvectormap/issues"
   },
-  "homepage": "https://github.com/xzones2014/jvectormap#readme"
+  "homepage": "https://github.com/xzones2014/jvectormap#readme",
+  "dependencies": {
+    "uglify-js": "^3.6.0"
+  }
 }

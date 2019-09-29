@@ -37,7 +37,9 @@ files=( \
 )
 
 baseDir=`dirname $0`
-
+mkdir -p dist
+targetDir="$baseDir/dist"
+dir "$targetDir"
 counter=0
 while [ $counter -lt ${#files[@]} ]; do
   files[$counter]="$baseDir/${files[$counter]}"
@@ -56,6 +58,7 @@ if [ -a $minified ]
     rm $minified
 fi
 
-cat ${files[*]} >> $minified
+cat ${files[*]} >> "$targetDir/$minified"
 
-uglifyjs $minified -o $minified -c
+$PWD/node_modules/uglify-js/bin/uglifyjs "$targetDir/$minified" -o "$targetDir/$minified" -c
+echo "done..."
