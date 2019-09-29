@@ -1,0 +1,30 @@
+{
+  "name": "jvectormap",
+  "version": "2.0.5",
+  "description": "Fork of http://jvectormap.com",
+  "main": "jquery-jvectormap.js",
+  "directories": {
+    "lib": "lib",
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xzones2014/jvectormap.git"
+  },
+  "keywords": [
+    "maps",
+    "vector",
+    "maps",
+    "jquery",
+    "plugin"
+  ],
+  "author": "jvectormap.com",
+  "license": "GPL-3.0-only",
+  "bugs": {
+    "url": "https://github.com/xzones2014/jvectormap/issues"
+  },
+  "homepage": "https://github.com/xzones2014/jvectormap#readme"
+}
